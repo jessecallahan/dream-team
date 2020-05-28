@@ -19,9 +19,9 @@ function Ticket(props) {
 
 
             <Card.Body>
-              <Card.Title>{props.names} - {props.location}</Card.Title>
+              <Card.Title>{props.name}</Card.Title>
               <Card.Text>
-                {props.issue}
+                <img height="200px" width="200px" src={props.img}></img>
               </Card.Text>
             </Card.Body>
           </div>
@@ -34,7 +34,7 @@ function Ticket(props) {
 
 Ticket.propTypes = {
   names: PropTypes.string,
-  location: PropTypes.string,
+  img: PropTypes.string,
   issue: PropTypes.string,
   id: PropTypes.string, // new PropType
   whenTicketClicked: PropTypes.func // new PropType

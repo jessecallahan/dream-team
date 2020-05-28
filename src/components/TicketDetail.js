@@ -8,7 +8,7 @@ function TicketDetail(props) {
     <React.Fragment>
       <h1>Ticket Detail</h1>
       <h3>{ticket.location} - {ticket.names}</h3>
-      <p><em>{ticket.issue}</em></p>
+      <p><em><img src={ticket.img}></img></em></p>
       <button onClick={props.onClickingEdit}>Update Ticket</button> { /* new code */}
       <button onClick={() => props.onClickingDelete(ticket.id)}>Close Ticket</button>
       <hr />

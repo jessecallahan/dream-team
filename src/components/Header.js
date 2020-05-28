@@ -1,11 +1,11 @@
 import React from "react";
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Image from '.././assets/dreamteamheader.jpg'
 
 function Header() {
   return (
-    <Jumbotron>
-      <h1>Help Queue</h1>
-    </Jumbotron>
+
+    <img src={Image}></img>
+
   );
 }
 

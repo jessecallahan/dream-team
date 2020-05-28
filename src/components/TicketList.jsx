@@ -19,8 +19,8 @@ function TicketList(props) {
 
           <Ticket
             whenTicketClicked={props.onTicketSelection}
-            names={ticket.names}
-            location={ticket.location}
+            name={ticket.names}
+            img={ticket.img}
             issue={ticket.issue}
             id={ticket.id}
             key={ticket.id} />
